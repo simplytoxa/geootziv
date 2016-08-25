@@ -1,0 +1,22 @@
+{
+  "name": "builder",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Anton <toxa.simply@google.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/simplytoxa/myBuilder",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.1.1"
+  }
+}

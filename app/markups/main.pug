@@ -1,0 +1,35 @@
+include _common/_mixins
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    include _common/_favicon
+    
+    // Bower CSS
+    link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+    // CSS
+    link(rel="stylesheet", href="css/main.css")
+    // Vendor JS
+    script(src='http://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js")
+    <![endif]-->
+    title
+      block title
+  body
+    <!--[if lt IE 7]>
+    p.browsehappy Вы используете
+      strong устаревший
+      | браузер. Пожалуйста 
+      a(href="http://browsehappy.com/") обновите его
+    <![endif]-->
+
+    include _common/_map
+
+    // JS
+    script(src="./js/bundle.min.js")

@@ -1,0 +1,14 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+      "linebreak-style": [1, "unix"]
+  },
+  "globals": {
+    "angular": true
+  },
+  "no-undef": 1,
+  "no-unused-vars": 1
+}
