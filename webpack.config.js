@@ -3,6 +3,11 @@
 const webpack = require('webpack');
 
 module.exports = {
+  babelrc: true,
+  output: {
+    filename: 'bundle.min.js',
+  },
+  devtool: 'source-map',
   module: {
     loaders: [{
       test: /\.js$/,

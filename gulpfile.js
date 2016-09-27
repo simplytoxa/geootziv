@@ -5,6 +5,7 @@ const gulp          = require('gulp'),
       merge         = require('merge-stream'),
       del           = require('del'),
       webpack       = require('webpack-stream'),
+      webpackConfig = require('./webpack.config.js'),
       $             = require('gulp-load-plugins')({
         lazy: true
       }),
@@ -127,12 +128,7 @@ gulp.task('script', () => {
         };
       })
     }))
-    .pipe(webpack({
-      output: {
-        filename: 'bundle.min.js',
-      },
-      devtool: 'source-map'
-    }))
+    .pipe(webpack(webpackConfig))
     .pipe(gulp.dest(path.jsDest));
 });
 
