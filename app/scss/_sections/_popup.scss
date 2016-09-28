@@ -1,0 +1,24 @@
+.popup{
+  height: 530px;
+  width: 380px;
+}
+.popup-header{
+  background-color: #ff8663;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 45px;
+  padding: 14px 15px 0;
+}
+.address{
+}
+.popup__icon{
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+.place-icon{
+  background: url("../img/map-marker.svg");
+}
+.cross-icon{
+  background: url("../img/delete.svg");
+}
