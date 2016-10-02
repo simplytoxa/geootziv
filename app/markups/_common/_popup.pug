@@ -1,11 +1,19 @@
-.popup
+.popup#popup
   .popup-header
-    i.popup__icon.place-icon
+    img(src='../img/map-marker.svg').popup__icon.place-icon
     .address(data-role='address') Невский пр., 78, Санкт-Петербург, 191025
-    i.popup__icon.cross-icon
-  .comments
+    img(src='../img/delete.svg').popup__icon.cross-icon
+  .comments-container
+    .comments
+      .comment
+        .comment__head
+          span.comment__name svetlana
+          span.comment__place Choco
+          span.comment__date 14.09.2016
+        .comment__body Very good
   form.form
+    label.form__label Ваш отзыв
     input(type='text').form__input
     input(type='text').form__input
     input(type='textarea').form__input.form__textarea
-    button(type='submit').form__submit Добавить
+    button(type='submit').form__submit-btn Добавить
